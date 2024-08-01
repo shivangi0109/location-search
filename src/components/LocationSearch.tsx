@@ -1,6 +1,13 @@
 import type { Place } from "../api/Place";
+import { useState } from "react";
 
-const LocationSearch = () => {
+interface LocationSearchProps {
+  onPlaceClick: (place: Place) => void;
+}
+
+const LocationSearch = ({ onPlaceClick }: LocationSearchProps) => {
+  const [places, setPlaces] = useState<Place[]>([]);
+
   return (
     <>
       <div>Location Search!!</div>

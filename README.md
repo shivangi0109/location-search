@@ -74,3 +74,42 @@ nvm uninstall <version>
 ```
 
 By using these commands, you can manage and switch between different Node.js versions easily on your system.
+
+### Direction for Installing Tailwind CSS with Vite
+
+- ### Here is the link to follow - [Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite)
+- ### Install Tailwind CSS
+  Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
+
+  ```
+  npm install -D tailwindcss postcss autoprefixer
+  ```
+
+  ```
+  npx tailwindcss init -p
+  ```
+- ### Configure your template paths
+  Add the paths to all of your template files in your tailwind.config.js file.
+
+  ```
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  ```
+- ### Add the Tailwind directives to your CSS
+  Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+
+  ```
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  ```
+
+- ### Start your build process
+  Run your build process with npm run dev.
+
+  ```
+  npm run dev
+  ```
+

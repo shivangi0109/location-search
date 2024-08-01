@@ -1,3 +1,5 @@
+import type { Place } from "../api/Place";
+
 const Map = () => {
   return (
     <>

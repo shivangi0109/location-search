@@ -6,19 +6,19 @@ This TypeScript-focused web application integrates a map interface similar to Go
 
 **Homepage:**
 
-!["View of homepage"]()
+!["View of homepage"](public/docs/screenshots/homepage.png)
 
 **Search for Specific Location:**
 
-!["View of searching for specific location"]()
+!["View of searching for specific location"](public/docs/screenshots/search-for-specific-location.png)
 
 **Specific Location in USA:**
 
-!["View of specific location in USA"]()
+!["View of specific location in USA"](public/docs/screenshots/specific-location-in-USA.png)
 
 **Specific Location in Philippines:**
 
-!["View of specific location in Philippines"]()
+!["View of specific location in Philippines"](public/docs/screenshots/specific-location-in-Philippines.png)
 
 ## Features
 * Search for locations using an external API

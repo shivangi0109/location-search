@@ -1,33 +1,59 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This TypeScript-focused web application integrates a map interface similar to Google Maps. It displays a map on the right and a search panel on the left. Users can type a location name, such as "New York," and press Enter to search for matching locations via an external API. The search results list the city and country of each location, along with a "Go" button. Clicking "Go" centers the map on the selected location. Built with Vite and plain React, this project emphasizes TypeScript usage without Redux.
 
-Currently, two official plugins are available:
+## Final Product
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Homepage:**
 
-## Expanding the ESLint configuration
+!["View of homepage"]()
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Search for Specific Location:**
 
-- Configure the top-level `parserOptions` property like this:
+!["View of searching for specific location"]()
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+**Specific Location in USA:**
+
+!["View of specific location in USA"]()
+
+**Specific Location in Philippines:**
+
+!["View of specific location in Philippines"]()
+
+## Features
+* Search for locations using an external API
+* Display search results with city and country information
+* Center map on selected location from search results
+
+## Tech Stack
+* **Frontend:** React, TypeScript
+* **Tooling:** Vite
+
+## Installation
+
+### Clone the repository:
+
+```
+git clone <repository-url>
+cd <repository-folder>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Install dependencies:
+
+```
+npm install
+```
+
+### Start the application:
+
+```
+npm run dev
+```
+
+## Usage
+* Type a location name in the search panel and press Enter.
+* View search results listing city and country information.
+* Click the "Go" button to center the map on the selected location.
 
 ## Getting Started with Project setup using Vite and Typescript
 * npm create vite location-search -- --template react-ts
@@ -112,4 +138,3 @@ By using these commands, you can manage and switch between different Node.js ver
   ```
   npm run dev
   ```
-
